@@ -1,3 +1,5 @@
+package AbstractClass;
+
 /**
 *   상속받은 자식 클래스로 객체 생성할 때 강제로 부모 클래스의 타입으로 변환시키기
 *
@@ -32,7 +34,7 @@ public class ClassTypeChange {
 
 
         Child3 child = (Child3) parent;
-        // 부모 클래스로 생성한 인스턴스 parent를 강제로 Child3 클래스의 타입으로 변환하기
+        // 부모 클래스로 생성한 인스턴스 parent를 강제로 AbstractClass.Child3 클래스의 타입으로 변환하기
         // 부모 클래스의 타입을 자동으로 자식 클래스의 타입으로 변동한다.
         // 자식 타입이 부모타입으로 자동 타입 변환한 후 다시 자식 타입으로 변환할 때 강제 타입 변환 사용 가능
         child.field2 = "yyy";
